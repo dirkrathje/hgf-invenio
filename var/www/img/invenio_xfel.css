@@ -104,8 +104,8 @@ a:hover { color: #FD930A; }
     height: 104px;
 }
 
-.home .headerboxbodylogo a,
-.home .headerboxbodylogo a:visited {
+.headerboxbodylogo a,
+.headerboxbodylogo a:visited {
 
     font-size: 0px;
     padding: 0 !important;
