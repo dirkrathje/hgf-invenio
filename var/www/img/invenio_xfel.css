@@ -1,0 +1,551 @@
+/* Local style */
+
+
+/* First import everything from Invenio to generate a real diff here */
+@import url("invenio.css");
+/* Load jquery-ui here to be able to overwrite it later on.
+   JS functionality _REQUIRES_ this css to be loaded!
+	 DO NOT REMOVE */
+@import url("jquery-ui.css");
+
+/* Styling submitmasks, allow adoption of jquery */
+@import url("submit_desy.css");
+/* Styling submitmasks, allow adoption of jquery */
+/* @import url("submit_desy_test.css"); */
+
+/* From DESY ZMS Styles */
+
+a:focus, a:active, a:hover, a.navtrail:hover {
+color: #FD930A;
+}
+
+a, a.navtrail {
+color: #261748;
+text-decoration: none;
+}
+
+/* END From DESY ZMS Styles */
+
+
+/* DESY Web-Fonts */
+
+/*
+@import url("https://fast.fonts.net/t/1.css?apiType=css&projectid=e896412d-18b7-4466-8158-f1d28a861809");
+@font-face{
+font-family:"DesyNeueHelveticaWFS-87HvCn";
+src:url("desy-resource/Fonts/441a591f-ffcf-4223-a7a6-719e82a369fc.eot?#iefix");
+src:url("desy-resource/Fonts/441a591f-ffcf-4223-a7a6-719e82a369fc.eot?#iefix") format("eot"),url("desy-resource/Fonts/132f81b9-efbb-4df2-a5d9-882062906bdb.woff") format("woff"),url("desy-resource/Fonts/45c48c0e-5415-4bf9-823b-1698b7129755.ttf") format("truetype"),url("desy-resource/Fonts/9badd8fe-28d5-4f79-ab6d-95d605afbe7e.svg#9badd8fe-28d5-4f79-ab6d-95d605afbe7e") format("svg");
+}
+@font-face{
+font-family:"DesyNeueHelveticaWFS-55Rm";
+src:url("desy-resource/Fonts/9f313770-c59c-4161-bb83-15a7b832ed0a.eot?#iefix");
+src:url("desy-resource/Fonts/9f313770-c59c-4161-bb83-15a7b832ed0a.eot?#iefix") format("eot"),url("desy-resource/Fonts/8e9b6c37-7c45-4c3a-bb2d-04e41b335d1a.woff") format("woff"),url("desy-resource/Fonts/c68ba3bd-479b-4bba-9400-32e2b7921037.ttf") format("truetype"),url("Fonts/a9fb8a69-36d5-46a0-892a-610ce53fcf42.svg#a9fb8a69-36d5-46a0-892a-610ce53fcf42") format("svg");
+}
+@font-face{
+font-family:"HelveticaNeueW01-67MdCn 692710";
+src:url("desy-resource/Fonts/3a605871-b94d-4161-a394-bb2cfc975df7.eot?#iefix");
+src:url("desy-resource/Fonts/3a605871-b94d-4161-a394-bb2cfc975df7.eot?#iefix") format("eot"),url("desy-resource/Fonts/aef05e22-e1d4-4e59-bc2e-a71c13c26cca.woff") format("woff"),url("desy-resource/Fonts/b785b1cf-24fa-44c9-8c93-d8e2d6912c47.ttf") format("truetype"),url("desy-resource/Fonts/5ab0c585-fb4b-43d9-abb0-b92f452b1284.svg#5ab0c585-fb4b-43d9-abb0-b92f452b1284") format("svg");
+}
+*/
+
+
+
+
+body {
+        max-width: 1024px;
+        min-width: 800px;
+	margin: 0 auto;
+   background: #f8f8f8;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 85%;
+  font-size-adjust: none;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  color: #666666;
+  margin-bottom: 20px;
+}
+
+h1 {
+	color: #261748;
+	font-family: DesyNeueHelveticaWFS-87HvCn;
+	font-weight: normal;
+	font-size: 38px;
+	margin: 6px 10px 0 10px;
+}
+
+p, div.pagebodystripemiddle ul, div.pagebodystripemiddle a{
+line-height: 20px;
+}
+
+th { font-weight: normal; }
+
+a:link, a:visited { color: #261748;  } 
+a:hover { color: #FD930A; }
+
+.home .searchbox {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.narrowsearchbox {
+   margin: 0px 20px 5px 0px;
+}
+
+/* .headerlogo { height: 260px; } */
+
+.headerbox {
+   margin-left: 0px;
+   margin-right: 10px;
+/*   border-bottom: 1px solid #666; */
+   background: transparent;
+	margin-bottom: 10px;
+}
+
+.headerboxbodylogo { float: left;  }
+
+.headerboxbodylogo a, .headerboxbodylogo a:visited{
+   margin-left: 20px;
+   padding-left: 90px;
+   background: transparent
+	 no-repeat
+	 left
+	 /* url("desy-resource/logo_xfel.png"); */
+	url('desy-resource/header-xfel2.png');
+   width: 980px;
+   line-height: 3em;
+   font-size: 26px;
+   letter-spacing: 2px;
+   text-decoration: none;
+   text-align: left;
+   float: left;
+   color:transparent;
+}
+
+.home .headerboxbodylogo a, .home .headerboxbodylogo a:visited{
+   margin-left: 20px;
+   padding-left: 90px;
+   background: transparent
+	 no-repeat
+	 left
+	 /* url("desy-resource/logo_xfel.png"); */
+	url('desy-resource/header-xfel2.png');
+   width: 980px;
+   line-height: 3em;
+   font-size: 26px;
+   letter-spacing: 2px;
+   text-decoration: none;
+   text-align: left;
+   color: transparent;
+}
+
+.desy_area_navigation { float: left;  }
+
+/* Breadcrubms == Navtrail */ 
+
+.portalboxbody {
+line-height: 17px;
+}
+
+/* Footer */
+/* Footer */
+.pagefooter {
+   margin-top: 0;
+   margin-right: 10px;
+   color: #666;
+   background: #f8f8f8;
+   font-size: x-small;
+   padding: 0px;
+   width: 100%;
+   height: 70px;
+	padding-top: 10px;	
+}
+
+.pagefooterstripeleft {
+   color: #666;
+   margin-top: 10px;
+   padding-right: 10px;
+   background: transparent
+      no-repeat
+      top left  
+      /* url("/img/logo_helmholtz_eng.gif"); */
+   font-size: x-small;
+   width: 98%;
+   height: 100px;
+   float: left;
+   text-align: right;
+}
+.pagefooterstriperight {
+   color: #666;
+   margin-top: 5px;
+   margin-right: 10px;
+   background: transparent;
+   width: 48%;
+   height: 100px;
+   float: right;
+	font-size: 11px;
+   text-align: right;
+}
+a.pagefooterstriperight{
+   color: #666;
+}
+a.footer:link {
+   color: #666;
+   background: transparent;
+   text-decoration: none;
+}
+a.footer:visited {
+   color: #666;
+   background: transparent;
+}
+a.footer:active {
+   color: #666;
+   background: transparent;
+}
+a.footer:hover {
+   color: #666;
+   text-decoration: underline;
+   background: transparent;
+}
+
+/* Language info */
+a.langinfo:link {
+   color: #666;
+   text-decoration: none;
+   background: transparent;
+}
+a.langinfo:visited {
+   color: #666;
+   background: transparent;
+}
+a.langinfo:active {
+   color: #666;
+   background: transparent;
+}
+a.langinfo:hover {
+   color: #666;
+   text-decoration: underline;
+   background: transparent;
+}
+
+/* Menues */
+.menu .headermoduleboxbody .hassubmenu a {
+        background-image: none;
+        line-height: 30px;
+}
+.menu .headermoduleboxbody .hassubmenu a.header:hover {
+        background-image: none;
+        line-height: 30px;
+}
+
+a.header:link {
+        line-height: 30px;
+	    color: #fff;
+        background: #fd930a;
+        text-transform: uppercase;
+        font-family: DesyNeueHelveticaWFS-87HvCn, Helvetica, Arial, sans-serif;
+        line-height: 100%;
+        vertical-align: baseline;
+        font-size: 95%;
+        text-decoration: none;
+	font-weight: normal;
+}
+a.header:visited {
+        line-height: 30px;
+	    color: #fff;
+        background: #fd930a;
+}
+a.header:hover {
+        line-height: 30px;
+	    color: #fff;
+        background: #fd930a;
+}
+
+
+
+a.headerselected:link {
+	color:#FD930A;
+	text-transform: uppercase;
+	font-family: DesyNeueHelveticaWFS-87HvCn, Helvetica, Arial, sans-serif;
+	line-height: 100%;
+	vertical-align: baseline;
+	font-size: 95%;
+	background: #f8f8f8;
+	text-decoration: none;
+        font-weight: normal;
+}
+a.headerselected:visited {
+   color: #FD930A;
+}
+a.headerselected:hover {
+	color: #FD930A;
+}
+
+.headermoduleboxbody {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-image: none;
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: repeat;
+    background-size: auto auto;
+    background: transparent;
+	color: #fff;
+    background: #fd930a;
+    border-bottom-width: 0px;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0px;
+    padding-left: 0;
+    padding-right: 0px;
+    padding-top: 0px;
+    text-align: center;
+    width: 75px;
+}
+.headermoduleboxbody:hover {
+   background: #f8f8f8;
+}
+
+.headermoduleboxbodyselected {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-image: none;
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: repeat;
+    background-size: auto auto;
+    border-bottom-width: 0px;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+	/*
+    padding-bottom: 2px;
+    padding-left: 0;
+    padding-right: 2px;
+    padding-top: 2px;
+	*/
+    text-align: center;
+    width: 75px;
+}
+
+tr.menu>td.headermoduleboxbodyblank:first-child { padding-left: 222px; }
+tr.menu td:nth-child(3) { border-right: 1px solid #333333; }
+tr.menu td:nth-child(5) { border-right: 1px solid #333333; }
+tr.menu td:nth-child(7) { border-right: 1px solid #333333; }
+
+tr.menu td a.headerselected, tr.menu td a.header {
+font-size: 95%;
+/*font-weight: bold;*/
+}
+
+.headermoduleboxbodyselected:hover {
+   color: #fff;
+   background: #fd930a;
+}
+.headermoduleboxbodyblank {
+	width: 0px;
+	padding: 0;
+	margin: 0;
+	border-bottom: 0;
+	color: #fff;
+    background: #fd930a;
+    line-height: 30px;
+}
+.headermoduleboxbodyblanklast {
+   padding: 0px;
+   margin: 0px;
+   width:100%;
+   border-bottom: 0;
+   color: #fff;
+   background: #fd930a;
+   line-height: 30px;
+}
+
+/* Detailed Records */
+
+.detailedrecordtabs li a {
+    background-image: none;
+    height: auto
+}
+
+.detailedrecordminipanel li a {
+    background-image: none;
+}
+
+.detailedrecordminipanel a:link {
+    background-image: none;
+}
+
+.detailedrecordminipanelreview {
+	width: 180px !important;
+}
+
+
+
+.abstract{
+  font-size: 85%;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  text-align: justify;
+}
+
+.refandconf{
+/*  padding-top: 0.5em; */
+/*  padding-bottom: 0.5em; */
+}
+
+.fulltext{
+  font-size: 85%;
+/*  padding-left: 1.5em; */
+/*  padding-right: 1.5em; */
+}
+
+/*
+
+/*
+Make the warnings more prominent, but the leave the head of entries unchanged
+*/
+.typhead .quicknote{
+  font-size: 85%;
+  font-weight: normal;
+  color: #666;
+}
+
+small.quicknote{
+  font-size: 85%;
+  font-weight: normal;
+  color: #666;
+}
+
+
+.quicknote{
+  font-size: 120%;
+  font-weight: bold;
+  color: red;
+}
+
+.typelist{
+  font-size: 85%;
+}
+
+.journalref{
+  display:inline-block;
+/*  padding-top: 0.5em; */
+/*  padding-bottom: 0.5em; */
+}
+
+.confinfo{
+  display:inline-block;
+  font-size: 100%;
+  font-style:italic;
+}
+
+div.moreinfo{
+  padding-bottom: 1em;
+}
+
+/* Make the Openurl link to FATER smaller */
+.linkresicon {
+    height:1em;
+    border:none;
+    vertical-align: text-bottom;
+}
+
+/* div.pageheader { background: #f8f8f8 url('desy-resource/header-xfel2.png') no-repeat 10px 120px; background-size: contain;}*/ 
+div.pageheader { background: #f8f8f8 no-repeat 10px 120px; background-size: contain;}
+div.pagebody { background: #f8f8f8; padding-bottom: 30px; }
+
+
+.desy_pubdb_headline_txt {
+	width: 622px;
+	float: left;
+	background-color: #261748;
+	height: 78px;
+	margin-left: 10px;
+}
+.desy_pubdb_headline_txt h1 { color: #f8f8f8; }
+.desy_pubdb_headline_txt span {
+	font-family: "HelveticaNeueW01-67MdCn 692710";
+	font-size: 14px;
+	color: #f8f8f8;
+	margin-left: 10px;
+}
+
+.menu ul.subsubmenu { top: 1.5em; left: -0.4em; /* list-style-image: url('https://pr.desy.de/++resource++desy/images/internal_link.gif') ;*//* list-style-position: inside;*/ }
+.menu ul.subsubmenu li { 
+	border-bottom: 1px dotted #333333;
+	border-left: 1px dotted #333333;
+	border-right: 1px dotted #333333; 
+        width: 150px;
+        background: #f8f8f8 url('https://pr.desy.de/++resource++desy/images/internal_link.gif') no-repeat 10px 16px ! important;
+        padding: 13px;
+}
+.menu ul.subsubmenu li a, .menu div ul.subsubmenu li a:visited { color: #696969; font-weight: bold; font-size: 11px; }
+.menu div ul.subsubmenu li a:hover { color: #FD930A; }
+
+.menu ul.subsubmenu li a:before {
+content: "m";
+color: transparent;
+}
+
+.pagebodystriperight { width: 160px; margin-right: 12px;  }
+.portalbox { border: 1px dotted #333; font-size: 1em; padding: 10px; }
+.portalboxheader { color: #696969; background: #f8f8f8; border: none;  }
+
+.formbutton { color: #333; background: #f8f8f8; font-weight: normal;  }
+
+a.userinfo:link, a.userinfo:visited { color: #261748; font-weight: normal; }
+.userinfoboxbody { color: #261748;  }
+a.footer:link, a.footer:visited { font-weight: normal;  }
+
+a.navtrail:link, a.navtrail:visited { font-weight: normal; color: #696969; font-size:11px;  }	
+.navtrailboxbody { color: #696969; font-size:11px; padding: 0px 0px 0px 20px;}
+
+.searchresultsbox { border: 1px dotted #333;  }
+.searchresultsboxheader { background: #f8f8f8;  }
+
+a.refauthor { font-weight: normal; }
+a.note { font-weight: normal; }
+a.note>img { margin: 0 2px 0 6px;  }
+
+a.moreinfo:link, a.moreinfo:visited { color: #666;  }
+
+.googlebox { border-top: 1px dotted #333; } 
+.googleboxheader { background: #f8f8f8;  }
+
+.externalcollectionsbox { border-top: 1px dotted #333; }
+.externalcollectionsboxheader  { background: #f8f8f8;  }
+
+.recordlastmodifiedbox { color: #FD930A; }
+
+.youraccountbox { border-top: 1px dotted #333; }
+.youraccountheader { background:#f8f8f8; }
+
+.headline { font-size: 20px; font-family: Arial, Helvetica, sans-serif; color: #261748; margin-left: 0; }
+
+.inboxheader { border-top: 1px dotted #333; border-bottom: 1px dotted #333;  }
+.mailboxheader tr { background: #f0f0f0; }
+.mailboxrecord td { border-top: 0px}
+.mailboxbody { background: #f8f8f8; }
+.mailboxfooter td { border-top: 1px dotted #333; }
+.quotabox { border: 1px dotted #333; background: #f8f8f8; }
+
+/* in topbanner of details page, we express the ID as link. Style this
+ * to look like normal boldface text as in invenio default.
+ */
+a.persistentlink {
+    color: black;
+    font-weight: bold;
+}
+
