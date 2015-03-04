@@ -115,11 +115,9 @@ a:hover { color: #FD930A; }
 
     dispay: block;
 
-    background: no-repeat url('desy-resource/header-xfel2.png');
+    background: no-repeat url('desy-resource/header-xfel2.png') !important;
     margin-bottom: -5px;
     margin-left: 0px;
-
-
 }
 
 
