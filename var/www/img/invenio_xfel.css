@@ -98,11 +98,6 @@ a:hover { color: #FD930A; }
     background-color: white;
 }
 
-.home .headerboxbodylogo,
-.home .headerboxbodylogo {
-
-    height: 104px;
-}
 
 .headerboxbodylogo a,
 .home .headerboxbodylogo a:visited,
@@ -110,12 +105,15 @@ a:hover { color: #FD930A; }
 .home .headerboxbodylogo a:visited {
 
     font-size: 0px;
+    color: transparent;
     padding: 0 !important;
 
     width: 100%;
     height: 100%;
 
     dispay: block;
+
+    height: 104px !important;
 
     background: no-repeat url('desy-resource/header-xfel2.png') !important;
     margin-bottom: -5px;
