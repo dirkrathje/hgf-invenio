@@ -1,0 +1,8 @@
+<name>GSB-List</name>
+<description>Literaturlisten f. GSB</description>
+<p>
+<bfe_typelist suffix='<br/>' />
+<BFE_AUTHORS_HGF prefix="" suffix="<br/>" extension=" ;<em> et al</em> " limit="50" print_links="yes" separator=" ; " print_affiliations="no" highlight="no" interactive="no" print_role='no'/><BFE_RECORD_URL prefix='<a target="_blank" class="RichTextExtLink ExternalLink" href="' suffix='" target="_blank">' /><BFE_TITLE prefix="<b>" suffix="</b></a><br/>" default="" escape="" highlight="yes" separator=" "/><BFE_CONFERENCEINFO prefix="<i>" suffix="</i>" />
+<BFE_JOURNALREFERENCE />
+<BFE_OPENURLLNK />
+</p>
