@@ -380,6 +380,11 @@ tr.menu td a.headerselected {
     position: static;
 }
 
+.menu .headermoduleboxbody .hassubmenu a {
+    background-image: none !important;
+
+}
+
 
 .headermoduleboxbodyselected:hover {
 
