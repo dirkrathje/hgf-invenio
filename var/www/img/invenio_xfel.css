@@ -55,6 +55,7 @@ h1 {
 div.pagebodystripemiddle {
 
     padding: 0px;
+    line-height: 24px;
 
 }
 
@@ -68,18 +69,21 @@ div.pagebodystripemiddle p,
 div.pagebodystripemiddle dl  {
 
     padding: 10px;
+    line-height: 24px;
 
 }
 div.pagebodystripemiddle dt  {
 
     font-weight: bold;
     font-size: 20px;
+    line-height: 24px;
 }
 div.pagebodystripemiddle dd  {
 
     padding: 0px;
     margin: 0px;
     padding-bottom: 20px;
+    line-height: 24px;
 }
 
 
@@ -400,6 +404,11 @@ tr.menu td a.headerselected {
 }
 
 
+.navtrailbox {
+
+    min-height: 15px;
+
+}
 
 
 
