@@ -178,7 +178,7 @@ a.headerselected {
 
     font-weight: normal;
     color: white;
-    background: #fd930a;
+    background: #fd930a  !important;
     padding: 0;
     padding-top: 7px;
     margin: 0;
