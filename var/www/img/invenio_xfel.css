@@ -14,17 +14,27 @@ DO NOT REMOVE */
 /* @import url("submit_desy_test.css"); */
 
 /* From DESY ZMS Styles */
+/* END From DESY ZMS Styles */
 
-a:focus, a:active, a:hover, a.navtrail:hover {
-    color: #FD930A;
-}
 
-a, a.navtrail {
+a,
+a:focus,
+a:active,
+a:hover,
+a:link,
+a:visited,
+a.navtrail:hover {
+
     color: #261748;
     text-decoration: none;
 }
 
-/* END From DESY ZMS Styles */
+
+
+
+
+
+
 
 
 
@@ -40,8 +50,6 @@ body {
     font-variant: normal;
     font-weight: normal;
 
-
-
     margin-bottom: 20px;
 }
 
@@ -51,6 +59,168 @@ h1 {
     font-weight: normal;
     font-size: 38px;
 }
+
+
+/* ***********************************************************   headerlogo  */
+
+
+
+.headerbox {
+
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+
+.headerboxbodylogo,
+.home .headerboxbodylogo {
+
+    dispay: block;
+
+    width: 947px;
+    height: 84px !important;
+
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 5px;
+    margin-top: 30px;
+    border: 0;
+
+    -webkit-box-shadow: 0px 0px 8px 2px rgba(230,230,230,1);
+    -moz-box-shadow: 0px 0px 8px 2px rgba(230,230,230,1);
+    box-shadow: 0px 0px 8px 2px rgba(230,230,230,1);
+}
+
+
+.headerboxbodylogo a,
+.home .headerboxbodylogo a {
+
+    width: 947px;
+    height: 100%;
+    font-size: 0px;
+    color: transparent;
+    margin: 0;
+    padding: 0 !important;
+
+    background: no-repeat url('desy-resource/header-xfel2-frameless.png') !important;
+}
+
+/* ***********************************************************   menu  */
+
+
+
+/* Menues */
+.menu td {
+    width: 128px;
+}
+
+tr.menu td:nth-child(3) {
+
+    padding-left: 400px;
+    border-left: 11px solid white;
+    border-right: 5px solid white;
+}
+
+tr.menu td:nth-child(5),
+tr.menu td:nth-child(7) {
+
+    border-right: 5px solid white
+}
+
+tr.menu td:nth-child(9) {
+
+    border-right: 10px solid white
+}
+
+
+tr.menu td a.headerselected {
+    font-weight: bold;
+}
+
+
+.menu .hassubmenu {
+    position: relative;
+}
+
+
+.menu .headermoduleboxbody .hassubmenu a {
+    background-image: none !important;
+
+}
+
+
+.headermoduleboxbodyselected:hover {
+
+}
+
+.headermoduleboxbodyblank {
+
+    display: none;
+}
+.headermoduleboxbodyblanklast {
+
+    display: none;
+}
+
+
+a.header,
+a.header:link,
+a.header:visited,
+a.header:hover,
+a.headerselected:visited,
+a.headerselected {
+
+    display: block;
+    weight: 100%;
+    height: 25px;
+
+    font-weight: normal;
+    color: white;
+    background: #fd930a;
+    padding: 0;
+    padding-top: 7px;
+    margin: 0;
+    font-size: 14px;
+    text-transform: none;
+    weight: 100%;
+
+    text-decoration: underline;
+    color: white;
+}
+
+
+.headermoduleboxbodyselected,
+.headermoduleboxbody {
+
+    margin: 0;
+    padding: 0px 5px;
+    background: none;
+    border: none;
+
+
+    background: #fd930a;
+    color: #fff;
+
+    text-align: left;
+}
+
+
+.headermoduleboxbody:hover {
+
+    background: #fd930a;
+}
+
+
+.headermoduleboxbodyselected {
+
+    font-weight: bold;
+}
+
+
+/* ***********************************************************   pagebodystripemiddle  */
+
 
 div.pagebodystripemiddle {
 
@@ -95,10 +265,6 @@ div.pagebodystripemiddle a {
 }
 
 th { font-weight: normal; }
-
-a:link, a:visited { color: #261748;  }
-a:hover { color: #FD930A; }
-
 
 .home .searchbox,
 .searchbox {
@@ -151,55 +317,6 @@ a:hover { color: #FD930A; }
     display: none;
 }
 
-
-/* .headerlogo { height: 260px; } */
-
-.headerbox {
-
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom: 10px;
-    background-color: white;
-}
-
-.headerboxbodylogo a,
-.home .headerboxbodylogo a {
-
-    width: 947px;
-    height: 100%;
-    /*height: 100%;*/
-    font-size: 0px;
-    color: transparent;
-    margin: 0;
-    padding: 0 !important;
-
-    background: no-repeat url('desy-resource/header-xfel2-frameless.png') !important;
-}
-
-
-.headerboxbodylogo,
-.home .headerboxbodylogo {
-
-    width: 947px;
-    margin: 0 auto;
-    border: 0;
-    padding: 5px;
-    margin-top: 30px;
-
-    -webkit-box-shadow: 0px 0px 8px 2px rgba(230,230,230,1);
-    -moz-box-shadow: 0px 0px 8px 2px rgba(230,230,230,1);
-    box-shadow: 0px 0px 8px 2px rgba(230,230,230,1);
-
-
-    height: 100%;
-
-    dispay: block;
-
-    height: 84px !important;
-
-    /*margin-bottom: -5px;
-    margin-left: 0px;*/
-}
 
 
 
@@ -289,11 +406,6 @@ a.langinfo:hover {
     background: transparent;
 }
 
-/* Menues */
-.menu td {
-    width: 128px;
-}
-
 
 
 .userinfoboxbody {
@@ -309,99 +421,8 @@ a.langinfo:hover {
 
 
 
-.headermoduleboxbodyselected,
-.headermoduleboxbody {
-
-    margin: 0;
-    padding: 0px 5px;
-    background: none;
-    border: none;
 
 
-    background: #fd930a;
-    color: #fff;
-
-    text-align: left;
-}
-
-
-.headermoduleboxbody:hover {
-
-    background: #fd930a;
-
-    /*font-weight: bold;*/
-}
-
-
-.headermoduleboxbodyselected {
-
-    font-weight: bold;
-}
-
-
-
-
-a.header,
-a.header:link,
-a.header:visited,
-a.header:hover,
-a.headerselected:visited,
-a.headerselected {
-
-    display: block;
-    weight: 100%;
-    height: 25px;
-
-    font-weight: normal;
-    color: white;
-    background: #fd930a;
-    padding: 0;
-    padding-top: 7px;
-    margin: 0;
-    font-size: 14px;
-    text-transform: none;
-    weight: 100%;
-
-    text-decoration: underline;
-    color: white;
-
-}
-
-
-
-tr.menu td:nth-child(3) { padding-left: 400px;border-left: 11px solid white; border-right: 5px solid white; }
-tr.menu td:nth-child(5) { border-right: 5px solid white }
-tr.menu td:nth-child(7) { border-right: 5px solid white }
-tr.menu td:nth-child(9) { border-right: 10px solid white }
-
-
-tr.menu td a.headerselected {
-    font-weight: bold;
-}
-
-
-.menu .hassubmenu {
-    position: static;
-}
-
-.menu .headermoduleboxbody .hassubmenu a {
-    background-image: none !important;
-
-}
-
-
-.headermoduleboxbodyselected:hover {
-
-}
-
-.headermoduleboxbodyblank {
-
-    display: none;
-}
-.headermoduleboxbodyblanklast {
-
-    display: none;
-}
 
 
 .navtrailbox {
@@ -511,13 +532,6 @@ div.pageheader {
 }
 
 
-tr.menu {
-
-    z-index: -10000;
-
-
-}
-
 div.pagebody {
 
     width: 947px;
@@ -548,11 +562,28 @@ div.pagebody {
     margin-left: 10px;
 }
 
+/* ***********************************************************   MENU  */
+
+tr.menu {
+
+    z-index: -10000;
+}
+
+
+
+/* *******************************************************   SUB MENU  */
+
+
+
 .menu ul.subsubmenu {
     display: none;
 }
 
-.menu ul.subsubmenu { top: 1.5em; left: -0.4em; /* list-style-image: url('https://pr.desy.de/++resource++desy/images/internal_link.gif') ;*//* list-style-position: inside;*/ }
+.menu ul.subsubmenu {
+    top: 1.5em;
+    left: -0.4em;
+    /* list-style-image: url('https://pr.desy.de/++resource++desy/images/internal_link.gif') ;*//* list-style-position: inside;*/ }
+
 .menu ul.subsubmenu li {
     border-bottom: 1px dotted #333333;
     border-left: 1px dotted #333333;
@@ -561,13 +592,23 @@ div.pagebody {
     background: #f8f8f8 url('https://pr.desy.de/++resource++desy/images/internal_link.gif') no-repeat 10px 16px ! important;
     padding: 13px;
 }
-.menu ul.subsubmenu li a, .menu div ul.subsubmenu li a:visited { color: #696969; font-weight: bold; font-size: 11px; }
-.menu div ul.subsubmenu li a:hover { color: #FD930A; }
+.menu ul.subsubmenu li a, .menu div ul.subsubmenu li a:visited {
+    color: #696969; font-weight: bold; font-size: 11px;
+}
+
+.menu div ul.subsubmenu li a:hover {
+
+    color: #FD930A;
+}
 
 .menu ul.subsubmenu li a:before {
     content: "m";
     color: transparent;
 }
+
+
+
+
 
 .pagebodystriperight { width: 160px; margin-right: 12px;  }
 .portalbox { border: 1px dotted #333; font-size: 1em; padding: 10px; }
@@ -612,7 +653,7 @@ a.moreinfo:link, a.moreinfo:visited { color: #666;  }
 
     /*font-size: 20px; font-family: Arial, Helvetica, sans-serif; color: #261748; margin-left: 0;*/
 
-    background-color: #261748;
+    /*background-color: #261748;
     color: white;
     padding: 32px 20px 5px 15px;
     font-weight: normal;
@@ -621,7 +662,7 @@ a.moreinfo:link, a.moreinfo:visited { color: #666;  }
     text-transform: uppercase;
     line-height: 100%;
     position: relative;
-    margin-bottom: 5px;
+    margin-bottom: 5px;*/
 
 }
 
@@ -649,6 +690,12 @@ table.narrowandfocusonsearchbox > tbody > tr > td:first-child {
 
 /* hide empy tds  */
 .focusonsearchboxbody {
+    display: none;
+}
+
+
+table.focusonsearchbox > tbody > tr:nth-child(1)  {
+
     display: none;
 }
 
