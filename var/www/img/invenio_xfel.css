@@ -178,7 +178,7 @@ a.headerselected {
 
     font-weight: normal;
     color: white;
-    background: #261748;
+    background: #fd930a;
     padding: 0;
     padding-top: 7px;
     margin: 0;
@@ -187,7 +187,7 @@ a.headerselected {
     weight: 100%;
 
     text-decoration: underline;
-    color: white;
+    color: white !important;
 }
 
 
