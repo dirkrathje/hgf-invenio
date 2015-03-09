@@ -648,12 +648,12 @@ a.moreinfo:link, a.moreinfo:visited { color: #666;  }
 .youraccountbox { border-top: 1px dotted #333; }
 .youraccountheader { background:#f8f8f8; }
 
-.home .searchboxheader,
+/*.home .searchboxheader,*/
 .headline {
 
-    /*font-size: 20px; font-family: Arial, Helvetica, sans-serif; color: #261748; margin-left: 0;*/
+    /*font-size: 20px; font-family: Arial, Helvetica, sans-serif; color: #261748; margin-left: 0;*/*/
 
-    /*background-color: #261748;
+    background-color: #261748;
     color: white;
     padding: 32px 20px 5px 15px;
     font-weight: normal;
@@ -662,7 +662,7 @@ a.moreinfo:link, a.moreinfo:visited { color: #666;  }
     text-transform: uppercase;
     line-height: 100%;
     position: relative;
-    margin-bottom: 5px;*/
+    margin-bottom: 5px;
 
 }
 
